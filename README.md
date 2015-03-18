@@ -36,6 +36,7 @@ Plugin 'Yggdroot/indentLine'
 let g:indentLine_enabled = 0
 
 Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 filetype plugin indent on     " required vundle end
 
