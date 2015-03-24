@@ -1,6 +1,14 @@
 # vim-ide
 my vim setting and plugins
 
+## 安装步骤
+
+1. git clone git@github.com:davidhoo/vim-ide.git
+2. 安装Vundle.vim git@github.com:gmarik/Vundle.vim.git
+3. 安装字体 git@github.com:powerline/fonts.git && cd fonts && sh install.sh
+4. cp -r vim-ide/.vim ~/ && cp vim-ide/.vimrc ~/
+5. vim +PluginInstall +qall
+
 ## .vimrc
 ```bash
 "/////////////////////////////////////////////////////////////////////////////
@@ -10,8 +18,8 @@ my vim setting and plugins
 set nocompatible              " be iMproved, required
 filetype off                  " required vundle begin
 
-set rtp+=~/.vim/bundle/vundle/ " set the runtime path to include Vundle and initialize
-call vundle#rc() " alternatively, pass a path where Vundle should install plugins
+set rtp+=~/.vim/bundle/Vundle.vim " set the runtime path to include Vundle and initialize
+call vundle#begin() " alternatively, pass a path where Vundle should install plugins
 
 Plugin 'gmarik/vundle' " let Vundle manage Vundle, required
 
@@ -38,6 +46,7 @@ let g:indentLine_enabled = 0
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 
+call vundle#end()             " required
 filetype plugin indent on     " required vundle end
 
 "/////////////////////////////////////////////////////////////////////////////

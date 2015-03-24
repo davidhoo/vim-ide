@@ -5,10 +5,10 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required vundle begin
 
-set rtp+=~/.vim/bundle/vundle/ " set the runtime path to include Vundle and initialize
-call vundle#rc() " alternatively, pass a path where Vundle should install plugins
+set rtp+=~/.vim/bundle/Vundle.vim " set the runtime path to include Vundle and initialize
+call vundle#begin() " alternatively, pass a path where Vundle should install plugins
 
-Plugin 'gmarik/vundle' " let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim' " let Vundle manage Vundle, required
 
 Plugin 'L9'
 Plugin 'bling/vim-airline'
@@ -32,6 +32,7 @@ let g:indentLine_enabled = 0
 
 Plugin 'godlygeek/tabular'
 
+call vundle#end()             " required
 filetype plugin indent on     " required vundle end
 
 "/////////////////////////////////////////////////////////////////////////////
