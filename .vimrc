@@ -49,6 +49,8 @@ nnoremap <leader>/ :let @/=""<CR>
 " easy buffer navigation
 nnoremap <C-l> :bn<CR>
 noremap <C-h> :bp<CR>
+vmap <leader>y :w !pbcopy<cr><cr>
+nmap <leader>p :r !pbpaste<cr><cr>
 
 "/////////////////////////////////////////////////////////////////////////////
 " General
